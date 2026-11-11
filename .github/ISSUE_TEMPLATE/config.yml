@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/cxy2696/GitHub-Discord-Bot/security/advisories/new
+    about: Please report security issues privately.
+  - name: Deployment and operations guide
+    url: https://github.com/cxy2696/GitHub-Discord-Bot/blob/main/docs/OPERATIONS.md
+    about: Check the runbook before opening an operations issue.
