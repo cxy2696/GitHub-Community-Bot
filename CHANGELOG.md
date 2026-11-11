@@ -14,6 +14,32 @@ All notable changes are documented here. The format is based on
 - Adapter contract fixtures.
 - More locales (Korean, Spanish, Portuguese).
 
+## [2.1.0] — 2026-11-11
+
+The website and demo release, published under the new repository name.
+
+### Added
+
+- **Static project website** served from `docs/` on GitHub Pages, with no build step,
+  no external CDN and no analytics.
+- **Interactive browser demo** with scripted English, 中文 and 日本語 replies, platform
+  switching, command suggestions, a language selector and an explicit simulation
+  notice.
+- **README animation** (`docs/assets/demo.gif`), poster, and a 1200×630 Open Graph
+  image so the project has a useful social preview.
+- **Reproducible demo assets** via `scripts/render_demo_assets.py`, plus
+  `make demo` and `make demo-assets` targets.
+- **`docs/DEMO.md`** covering the demo, local serving, accessibility and GitHub Pages
+  deployment.
+
+### Changed
+
+- Renamed the repository from `GitHub-Discord-Bot` to **`GitHub-Community-Bot`**;
+  existing links redirect. Updated clone URLs, badges, issue templates, security
+  advisory links, package metadata and documentation.
+- Bumped the package to **2.1.0**.
+- The website is now the repository homepage / live demo link.
+
 ## [2.0.0] — 2026-11-11
 
 The platform-neutral, local-AI release. This is a ground-up rewrite of the original
@@ -56,8 +82,7 @@ Discord-only Gemini bot.
   command set while keeping familiar aliases.
 - Tone reflection (`!sentiment`) no longer requires fetching a message by ID, which
   makes it usable on every platform.
-- The project name in documentation is **GitHub Community Bot**; the repository name is
-  retained for continuity.
+- The project name in documentation is **GitHub Community Bot**.
 
 ### Removed
 

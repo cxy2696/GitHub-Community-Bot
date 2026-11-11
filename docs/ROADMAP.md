@@ -13,7 +13,15 @@ self-hostable and maintainable by a small group of volunteers.
 - Health, readiness, Prometheus metrics, Docker, systemd guidance, backups
 - CI on Python 3.11–3.13 with 60+ offline tests
 
-## Next — v2.1 (maintenance and polish)
+## Now — v2.1 (shipped)
+
+- **GitHub Pages website** with a responsive product tour.
+- **Interactive browser demo** in English, 中文 and 日本語, with platform and command
+  switching.
+- **Demo GIF, poster and Open Graph image**, plus a reproducible Playwright renderer.
+- **Repository rename** to `GitHub-Community-Bot`, with all links and metadata updated.
+
+## Next — v2.2 (maintenance and polish)
 
 - **Slack slash commands** via a signed HTTP endpoint, so `/ask` works without a
   mention. Socket Mode already covers mentions and DMs.

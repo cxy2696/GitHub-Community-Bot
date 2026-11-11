@@ -116,7 +116,8 @@ class HTTPServerAdapter(PlatformAdapter):
             {
                 "name": bot.config.bot_name,
                 "version": __version__,
-                "docs": "https://github.com/cxy2696/GitHub-Discord-Bot",
+                "website": "https://cxy2696.github.io/GitHub-Community-Bot/",
+                "repository": "https://github.com/cxy2696/GitHub-Community-Bot",
                 "endpoints": [
                     "/healthz",
                     "/readyz",

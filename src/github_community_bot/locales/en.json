@@ -22,7 +22,7 @@
   "error.github_repo_missing": "No repository is selected yet. An admin can run `{prefix}set_repo owner/repo`.",
   "error.github_api": "GitHub didn't answer as expected. Please try again shortly; the bot will keep retrying in the background.",
   "error.not_linked": "Link your GitHub account first with `{prefix}link <github-username>`, then I can help with that.",
-  "error.repo_invalid": "Please use `owner/repository`, for example `{prefix}set_repo cxy2696/GitHub-Discord-Bot`.",
+  "error.repo_invalid": "Please use `owner/repository`, for example `{prefix}set_repo cxy2696/GitHub-Community-Bot`.",
   "error.repo_not_found": "I couldn't open `{repo}`. Check the spelling and make sure the token can read it.",
   "error.private": "That action is only available in a direct message, to keep your data private.",
   "repo.usage": "Usage: `{prefix}set_repo owner/repository`",

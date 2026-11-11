@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "github-community-bot"
-version = "2.0.0"
+version = "2.1.0"
 description = "A free, open-source, multi-platform GitHub community bot powered by local Ollama models."
 readme = "README.md"
 license = "MIT"
@@ -49,12 +49,18 @@ dev = [
   "ruff>=0.8,<1",
   "build>=1.2,<2",
 ]
+demo = [
+  "playwright>=1.45,<2",
+  "Pillow>=10,<14",
+]
 
 [project.urls]
-Homepage = "https://github.com/cxy2696/GitHub-Discord-Bot"
-Documentation = "https://github.com/cxy2696/GitHub-Discord-Bot/tree/main/docs"
-Issues = "https://github.com/cxy2696/GitHub-Discord-Bot/issues"
-Changelog = "https://github.com/cxy2696/GitHub-Discord-Bot/blob/main/CHANGELOG.md"
+Homepage = "https://cxy2696.github.io/GitHub-Community-Bot/"
+"Live Demo" = "https://cxy2696.github.io/GitHub-Community-Bot/#demo"
+Repository = "https://github.com/cxy2696/GitHub-Community-Bot"
+Documentation = "https://github.com/cxy2696/GitHub-Community-Bot/tree/main/docs"
+Issues = "https://github.com/cxy2696/GitHub-Community-Bot/issues"
+Changelog = "https://github.com/cxy2696/GitHub-Community-Bot/blob/main/CHANGELOG.md"
 
 [project.scripts]
 github-community-bot = "github_community_bot.app:main"

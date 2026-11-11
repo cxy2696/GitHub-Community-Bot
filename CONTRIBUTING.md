@@ -14,8 +14,8 @@ changes that make a self-hosted community bot easier to run and kinder to use.
 ## Development setup
 
 ```bash
-git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
-cd GitHub-Discord-Bot
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
 python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"

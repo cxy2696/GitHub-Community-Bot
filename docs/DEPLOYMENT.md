@@ -20,8 +20,8 @@ If Ollama is remote, put it on a private network; the default API has no auth.
 ## Option A — local process
 
 ```bash
-git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
-cd GitHub-Discord-Bot
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
 python -m venv .venv
 source .venv/bin/activate
 pip install -e .
@@ -39,7 +39,7 @@ Create a dedicated user and directory:
 
 ```bash
 sudo useradd --system --create-home --home-dir /opt/github-community-bot communitybot
-sudo -u communitybot git clone https://github.com/cxy2696/GitHub-Discord-Bot.git /opt/github-community-bot/app
+sudo -u communitybot git clone https://github.com/cxy2696/GitHub-Community-Bot.git /opt/github-community-bot/app
 cd /opt/github-community-bot/app
 sudo -u communitybot python3 -m venv .venv
 sudo -u communitybot .venv/bin/pip install -e .

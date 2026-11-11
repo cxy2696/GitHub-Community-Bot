@@ -2,11 +2,13 @@
 
 [English](../../README.md) · **中文** · [日本語](README.ja.md)
 
+**在线演示与官网：** <https://cxy2696.github.io/GitHub-Community-Bot/>
+
 一个免费、开源、可自托管的社区机器人：把 GitHub 上的贡献变成社区里看得见的鼓励。
 AI 通过 [Ollama](https://ollama.com) 在本地运行，不需要付费 API，也不把聊天内容交给第三方。
 支持 **Discord、Slack、Telegram、Matrix**，以及任何能发送签名 HTTP 请求的聊天软件。
 
-> 仓库名仍保留 `GitHub-Discord-Bot`，以便旧链接继续有效；产品已经不再局限于 Discord。
+> 仓库已从 `GitHub-Discord-Bot` 更名为 `GitHub-Community-Bot`，旧链接会自动跳转；产品已经不再局限于 Discord。
 
 ---
 
@@ -36,8 +38,8 @@ ollama pull qwen2.5:3b
 ### 2. 安装机器人
 
 ```bash
-git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
-cd GitHub-Discord-Bot
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
@@ -71,7 +73,7 @@ Token 可用 `public_repo`（私有仓库用 `repo`）。
 
 ```bash
 GITHUB_TOKEN=ghp_...
-GITHUB_REPO=cxy2696/GitHub-Discord-Bot
+GITHUB_REPO=cxy2696/GitHub-Community-Bot
 ```
 
 然后在命令行里运行 `!link 你的GitHub用户名` 和 `!leaderboard`。
@@ -245,7 +247,7 @@ src/github_community_bot/
   services/github.py GitHub 读取与轮询
   platforms/        Discord / Slack / Telegram / Matrix / HTTP / CLI
   locales/          en.json / zh.json / ja.json
-tests/              60+ 离线测试
+tests/              70+ 离线测试
 ```
 
 欢迎贡献：先读 [CONTRIBUTING.md](../../CONTRIBUTING.md)，翻译规范见

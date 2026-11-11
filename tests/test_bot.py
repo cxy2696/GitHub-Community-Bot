@@ -14,7 +14,7 @@ async def test_help_about_and_start(bot, message_factory):
     assert "!leaderboard" in help_reply
 
     about = (await bot.handle_message(message_factory("!about")))[0].text
-    assert "2.0.0" in about
+    assert "2.1.0" in about
     assert "Ollama" in about
 
     start = (await bot.handle_message(message_factory("!start")))[0].text
@@ -159,7 +159,7 @@ async def test_status(bot, message_factory):
 async def test_github_webhook_awards_once(bot, db, message_factory):
     await bot.handle_message(message_factory("!link alice"))
     payload = {
-        "repository": {"full_name": "cxy2696/GitHub-Discord-Bot"},
+        "repository": {"full_name": "cxy2696/GitHub-Community-Bot"},
         "action": "opened",
         "issue": {
             "number": 5,
@@ -188,7 +188,7 @@ async def test_poll_awards_once(bot, fake_github, db, message_factory):
     await bot.handle_message(message_factory("!link alice"))
     fake_github.recent = [
         ActivityItem(
-            key="commit:cxy2696/GitHub-Discord-Bot:abc",
+            key="commit:cxy2696/GitHub-Community-Bot:abc",
             kind="commit",
             points=10,
             title="Docs",

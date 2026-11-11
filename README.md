@@ -1,11 +1,12 @@
 # GitHub Community Bot
 
-[![CI](https://github.com/cxy2696/GitHub-Discord-Bot/actions/workflows/ci.yml/badge.svg)](https://github.com/cxy2696/GitHub-Discord-Bot/actions/workflows/ci.yml)
+[![CI](https://github.com/cxy2696/GitHub-Community-Bot/actions/workflows/ci.yml/badge.svg)](https://github.com/cxy2696/GitHub-Community-Bot/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![AI: Ollama](https://img.shields.io/badge/AI-Ollama%20local-black)](https://ollama.com)
+[![Live demo](https://img.shields.io/badge/live%20demo-GitHub%20Pages-5eead4)](https://cxy2696.github.io/GitHub-Community-Bot/)
 
-**English** · [中文](docs/i18n/README.zh.md) · [日本語](docs/i18n/README.ja.md)
+**English** · [中文](docs/i18n/README.zh.md) · [日本語](docs/i18n/README.ja.md) · [Website & live demo](https://cxy2696.github.io/GitHub-Community-Bot/)
 
 A free, open-source, self-hosted community bot that turns GitHub contributions into
 friendly momentum — on Discord, Slack, Telegram, Matrix, or **any chat app that can
@@ -16,10 +17,23 @@ vendor lock-in, and no chat content sent to a third party. The bot speaks Englis
 中文 and 日本語, and falls back to friendly deterministic replies when the model is
 offline.
 
-> **Repository name:** this project was originally `GitHub-Discord-Bot`. The name is
-> kept for existing links and stars; the product is now platform-neutral.
+> **Renamed:** this repository was formerly `GitHub-Discord-Bot`. Existing links
+> redirect, and the product is now deliberately platform-neutral.
 
 ---
+
+## See it in action
+
+[![Animated demo of the bot linking GitHub, generating a challenge and switching to Chinese and Japanese](docs/assets/demo.gif)](https://cxy2696.github.io/GitHub-Community-Bot/)
+
+The **[live website](https://cxy2696.github.io/GitHub-Community-Bot/)** includes an
+interactive browser demo with English, 中文 and 日本語 replies. It is a simulation
+designed to run on GitHub Pages — no token, database or model is used there. The CLI
+demo in the next section runs the real engine and your local Ollama model.
+
+- Website: <https://cxy2696.github.io/GitHub-Community-Bot/>
+- Demo notes: [docs/DEMO.md](docs/DEMO.md)
+- Run the site locally: `make demo` → <http://127.0.0.1:8000/>
 
 ## Why people use it
 
@@ -36,7 +50,10 @@ offline.
 - **Easy to keep alive.** Health checks, readiness checks, metrics, backups,
   structured logs, versioned migrations, Docker and CI are part of the project.
 
-## What changed in 2.0
+## What changed
+
+**2.1** adds the website, interactive demo, demo GIF and the repository rename to
+`GitHub-Community-Bot`. **2.0** was the platform-neutral rewrite:
 
 | Area | Before | Now |
 | --- | --- | --- |
@@ -66,8 +83,8 @@ For higher quality, try `qwen3:8b` and set `OLLAMA_MODEL=qwen3:8b`.
 ### 2. Install the bot
 
 ```bash
-git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
-cd GitHub-Discord-Bot
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
@@ -102,7 +119,7 @@ Create a token with read access to **Metadata, Contents, Issues and Pull request
 
 ```bash
 GITHUB_TOKEN=ghp_...
-GITHUB_REPO=cxy2696/GitHub-Discord-Bot
+GITHUB_REPO=cxy2696/GitHub-Community-Bot
 ```
 
 Then use `!link <github-username>` and `!leaderboard` in the CLI.
@@ -324,7 +341,7 @@ the old leaderboard, see [docs/MIGRATION.md](docs/MIGRATION.md).
 
 ## Sustainable by design
 
-- **Tests first:** 60+ offline tests cover i18n, config validation, storage,
+- **Tests first:** 70+ offline tests cover i18n, config validation, storage,
   idempotent awards, commands, HTTP signatures, AI parsing and rate limiting.
 - **CI:** Ruff + pytest on Python 3.11, 3.12 and 3.13.
 - **Small dependency surface:** aiohttp, PyGithub, discord.py, python-dotenv.
@@ -347,7 +364,7 @@ src/github_community_bot/
   services/github.py GitHub reads and polling
   platforms/         Discord, Slack, Telegram, Matrix, HTTP, CLI
   locales/           en.json, zh.json, ja.json
-tests/               60+ offline tests
+tests/               70+ offline tests
 docs/                architecture, platforms, deployment, operations, privacy, i18n
 ```
 
