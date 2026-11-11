@@ -1,6 +1,29 @@
+# Secrets
 .env
+.env.*
+!.env.example
+
+# Runtime
+data/
+*.db
+*.db-wal
+*.db-shm
+*.log
+backups/
+.venv/
 venv/
 __pycache__/
-*.pyc
-*.db
-bot.log
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-community-bot"
+version = "2.0.0"
+description = "A free, open-source, multi-platform GitHub community bot powered by local Ollama models."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "cxy2696 and contributors" }]
+keywords = [
+  "discord",
+  "slack",
+  "telegram",
+  "matrix",
+  "github",
+  "ollama",
+  "community",
+  "gamification",
+  "i18n",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Framework :: AsyncIO",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Communications :: Chat",
+  "Topic :: Software Development :: Bug Tracking",
+]
+dependencies = [
+  "aiohttp>=3.10,<4",
+  "PyGithub>=2.5,<3",
+  "discord.py>=2.4,<3",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "pytest-asyncio>=0.24,<2",
+  "pytest-cov>=5,<8",
+  "ruff>=0.8,<1",
+  "build>=1.2,<2",
+]
+
+[project.urls]
+Homepage = "https://github.com/cxy2696/GitHub-Discord-Bot"
+Documentation = "https://github.com/cxy2696/GitHub-Discord-Bot/tree/main/docs"
+Issues = "https://github.com/cxy2696/GitHub-Discord-Bot/issues"
+Changelog = "https://github.com/cxy2696/GitHub-Discord-Bot/blob/main/CHANGELOG.md"
+
+[project.scripts]
+github-community-bot = "github_community_bot.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+github_community_bot = ["locales/*.json"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["github_community_bot"]

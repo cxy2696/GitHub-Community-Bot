@@ -1,0 +1,49 @@
+name: Bug report
+description: Something does not work as documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please remove tokens and personal data from logs.
+        For security issues, use the private advisory link in SECURITY.md instead.
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: v2.0.0 or a commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Discord, Slack, Telegram, Matrix, HTTP bridge, CLI, Multiple]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Send ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs (secrets removed)
+      render: text
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS 15 / Python 3.13 / Ollama 0.40 / qwen2.5:3b

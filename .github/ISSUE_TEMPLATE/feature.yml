@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest a focused improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Community problem
+      description: What is hard today, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: smallest
+    attributes:
+      label: Smallest useful version
+      description: What is the least we could build that helps?
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Operational cost
+      description: New service, secret, permission, database or cloud dependency?
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can test this
+        - label: I can write documentation
+        - label: I can implement this
