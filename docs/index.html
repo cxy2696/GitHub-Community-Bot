@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Community Bot — Local AI, every chat platform</title>
+  <meta name="description" content="A free, open-source community bot that turns GitHub contributions into friendly momentum. Local Ollama AI, English / 中文 / 日本語, Discord, Slack, Telegram, Matrix, and a signed HTTP bridge.">
+  <meta name="theme-color" content="#080b14">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GitHub Community Bot — Local AI, every chat platform">
+  <meta property="og:description" content="Celebrate GitHub contributions with a kind, self-hosted bot powered by local Ollama. Free, open source, MIT.">
+  <meta property="og:url" content="https://cxy2696.github.io/GitHub-Community-Bot/">
+  <meta property="og:image" content="https://cxy2696.github.io/GitHub-Community-Bot/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GitHub Community Bot">
+  <meta name="twitter:description" content="Local AI. Every chat platform. English, 中文 and 日本語.">
+  <meta name="twitter:image" content="https://cxy2696.github.io/GitHub-Community-Bot/assets/og-image.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="GitHub Community Bot home">
+        <img src="assets/mark.svg" alt="" width="38" height="38">
+        <span>GitHub Community Bot</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#quickstart">Quickstart</a>
+      </nav>
+      <div class="header-actions">
+        <a class="ghost-button" href="https://github.com/cxy2696/GitHub-Community-Bot">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Free · open source · local AI</p>
+        <h1>Turn GitHub contributions into <span class="gradient-text">community momentum.</span></h1>
+        <p class="lede">A kind, self-hosted bot that celebrates commits, issues and pull requests — powered by <strong>Ollama on your machine</strong>, fluent in English, 中文 and 日本語, and at home on every chat platform.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#demo">Try the live demo <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="https://github.com/cxy2696/GitHub-Community-Bot">View source</a>
+        </div>
+        <ul class="hero-points" aria-label="Highlights">
+          <li><span aria-hidden="true">✓</span> No paid AI API</li>
+          <li><span aria-hidden="true">✓</span> Your chat stays yours</li>
+          <li><span aria-hidden="true">✓</span> MIT licensed</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-label="An example bot conversation">
+        <div class="glow glow-a" aria-hidden="true"></div>
+        <div class="glow glow-b" aria-hidden="true"></div>
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="terminal-title">github-community-bot</span>
+            <span class="terminal-badge">local · ollama</span>
+          </div>
+          <div class="terminal-body">
+            <div class="term-line user"><span class="term-prompt">you</span> !challenge</div>
+            <div class="term-bot">
+              <p class="term-bot-title">🎯 Your next challenge</p>
+              <p>Leave one kind, specific comment on a small pull request this week. Name what works and ask one gentle question.</p>
+            </div>
+            <div class="term-line user"><span class="term-prompt">you</span> !leaderboard</div>
+            <div class="term-bot compact">
+              <p class="term-bot-title">🏆 Community leaderboard</p>
+              <p><span class="rank">1.</span> <strong>Mina</strong> <span class="muted">(@mina-dev)</span> <span class="score">1,240 pts</span> <span class="badge">Gold</span></p>
+              <p><span class="rank">2.</span> <strong>Ken</strong> <span class="muted">(@kenji)</span> <span class="score">760 pts</span> <span class="badge silver">Silver</span></p>
+              <p><span class="rank">3.</span> <strong>Ada</strong> <span class="muted">(@ada)</span> <span class="score">310 pts</span> <span class="badge bronze">Bronze</span></p>
+            </div>
+            <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform-strip shell" aria-label="Supported platforms">
+      <span class="strip-label">Works where your community already is</span>
+      <div class="strip-items">
+        <span>Discord</span><i aria-hidden="true"></i>
+        <span>Slack</span><i aria-hidden="true"></i>
+        <span>Telegram</span><i aria-hidden="true"></i>
+        <span>Matrix</span><i aria-hidden="true"></i>
+        <span>HTTP bridge</span><i aria-hidden="true"></i>
+        <span>CLI</span>
+      </div>
+    </section>
+
+    <section id="demo" class="section shell demo-section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive demo</p>
+        <h2>Try the bot without installing anything.</h2>
+        <p>This browser demo uses scripted, multilingual replies so it can run on GitHub Pages. The real bot uses your local Ollama model, your database and your platform tokens.</p>
+      </div>
+
+      <div class="demo-shell" id="demo-shell" data-platform="discord">
+        <aside class="demo-aside">
+          <div>
+            <p class="panel-label">Choose a platform</p>
+            <div class="platform-list" role="group" aria-label="Simulated platform">
+              <button type="button" class="platform-chip is-active" data-platform="discord" aria-pressed="true"><span class="platform-dot discord"></span>Discord</button>
+              <button type="button" class="platform-chip" data-platform="slack" aria-pressed="false"><span class="platform-dot slack"></span>Slack</button>
+              <button type="button" class="platform-chip" data-platform="telegram" aria-pressed="false"><span class="platform-dot telegram"></span>Telegram</button>
+              <button type="button" class="platform-chip" data-platform="matrix" aria-pressed="false"><span class="platform-dot matrix"></span>Matrix</button>
+            </div>
+          </div>
+
+          <div>
+            <p class="panel-label">Try a command</p>
+            <div class="sample-list">
+              <button type="button" data-prompt="!help">!help</button>
+              <button type="button" data-prompt="!link alice">!link alice</button>
+              <button type="button" data-prompt="!challenge">!challenge</button>
+              <button type="button" data-prompt="!leaderboard">!leaderboard</button>
+              <button type="button" data-prompt="!sentiment this is a terrible idea">!sentiment</button>
+              <button type="button" data-prompt="!ask how do I review my first PR?">!ask</button>
+              <button type="button" data-prompt="!language ja">!language ja</button>
+            </div>
+          </div>
+
+          <p class="sim-note"><strong>Simulated preview.</strong> No account, token or model is used on this page. Start the project locally for real Ollama answers.</p>
+        </aside>
+
+        <div class="chat-panel">
+          <header class="chat-header">
+            <div class="chat-identity">
+              <span class="bot-avatar" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="22" height="22"><path d="M8 12a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4h-4l-4 4v-4.4A4 4 0 0 1 8 17z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="13" cy="14.5" r="1.2" fill="currentColor"/><circle cx="19" cy="14.5" r="1.2" fill="currentColor"/></svg>
+              </span>
+              <div>
+                <p class="chat-name">GitHub Community Bot</p>
+                <p class="chat-status"><span class="status-dot"></span><span id="demo-platform-label">Discord</span> · simulated</p>
+              </div>
+            </div>
+            <div class="chat-langs" role="group" aria-label="Demo language">
+              <button type="button" data-demo-lang="en" class="is-active">EN</button>
+              <button type="button" data-demo-lang="zh">中文</button>
+              <button type="button" data-demo-lang="ja">日本語</button>
+            </div>
+          </header>
+
+          <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Demo conversation"></div>
+
+          <form class="chat-form" id="chat-form">
+            <label class="sr-only" for="chat-input">Message the demo bot</label>
+            <input id="chat-input" name="message" type="text" autocomplete="off" maxlength="500" placeholder="Type !help or say hello…">
+            <button type="submit" class="send-button" aria-label="Send message">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12 20 4l-3 8 3 8-16-8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
+          </form>
+          <p class="chat-hint">Try <code>!language zh</code> or <code>!language ja</code>. <button type="button" id="reset-demo" class="text-button">Reset</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">Why it feels different</p>
+        <h2>Community momentum, without the hustle.</h2>
+        <p>Small, specific encouragement. Local AI. No engagement metrics that reward volume over kindness.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Local AI, zero API bills</h3>
+          <p>Ollama runs on your hardware. No Gemini key, no per-message invoice, no chat content sent to an AI vendor.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5A3.5 3.5 0 0 1 7.5 4h6A3.5 3.5 0 0 1 17 7.5v3a3.5 3.5 0 0 1-3.5 3.5H10l-4 3v-3.3A3.5 3.5 0 0 1 4 10.5z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M17 9h1.5A2.5 2.5 0 0 1 21 11.5v3a2.5 2.5 0 0 1-2.5 2.5H18v2l-3-2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <h3>Six ways to join</h3>
+          <p>Discord, Slack, Telegram, Matrix, a signed HTTP bridge and a CLI. Same brain, same database, same community.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.8 9h16.4M3.8 15h16.4M12 3.5c2.2 2.4 3.4 5.3 3.4 8.5s-1.2 6.1-3.4 8.5c-2.2-2.4-3.4-5.3-3.4-8.5S9.8 5.9 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <h3>Truly trilingual</h3>
+          <p>English, 中文 and 日本語 across the interface, command aliases and docs. Language is remembered per member.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.4 2.9 8.1 7 10 4.1-1.9 7-5.6 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Fair, idempotent points</h3>
+          <p>Points follow the GitHub identity. A unique activity ledger means webhooks, polling and manual refreshes never double-count.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 3 12 2-8 2 2h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Built for operations</h3>
+          <p>Health and readiness endpoints, Prometheus metrics, JSON logs, migrations, Docker, backups and a real runbook.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9.2A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.8C19 15.7 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <h3>Kind by default</h3>
+          <p>Privacy controls, DM-only deletion, opt-out, admin allowlists and tone reflection that never diagnoses a person.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="platforms" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">One bot, many rooms</p>
+        <h2>Meet people where they already talk.</h2>
+        <p>No public URL is needed for Discord, Slack or Telegram. The bridge covers everything else.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="platform-card">
+          <div class="platform-card-head"><span class="platform-dot discord"></span><h3>Discord</h3><span class="tag">Gateway</span></div>
+          <p>Slash commands, prefix commands, DMs and mentions. Message Content Intent only for text commands.</p>
+        </article>
+        <article class="platform-card">
+          <div class="platform-card-head"><span class="platform-dot slack"></span><h3>Slack</h3><span class="tag">Socket Mode</span></div>
+          <p>Mentions and DMs over an outbound WebSocket. No request URL or public ingress.</p>
+        </article>
+        <article class="platform-card">
+          <div class="platform-card-head"><span class="platform-dot telegram"></span><h3>Telegram</h3><span class="tag">Long polling</span></div>
+          <p>Localized command menus, group mentions and persistent update offsets. No webhook required.</p>
+        </article>
+        <article class="platform-card">
+          <div class="platform-card-head"><span class="platform-dot matrix"></span><h3>Matrix</h3><span class="tag">/sync</span></div>
+          <p>Unencrypted community rooms, mention detection and chunked replies. E2EE is deliberately out of scope.</p>
+        </article>
+        <article class="platform-card bridge-card">
+          <div class="platform-card-head"><span class="platform-dot bridge"></span><h3>Any other chat app</h3><span class="tag">HTTP + HMAC</span></div>
+          <p>Feishu, WeCom, LINE, Teams, Zulip, a web widget, n8n: POST a signed JSON message and receive the replies.</p>
+          <a href="https://github.com/cxy2696/GitHub-Community-Bot/blob/main/docs/PLATFORMS.md#bridge">Bridge API <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="quickstart" class="section shell quickstart">
+      <div class="quickstart-copy">
+        <p class="eyebrow">Five-minute start</p>
+        <h2>Run it on your laptop tonight.</h2>
+        <p>Python 3.11+ and Ollama are the only things you need. The CLI demo creates a local SQLite database and needs no Discord or GitHub token.</p>
+        <div class="quick-links">
+          <a href="https://github.com/cxy2696/GitHub-Community-Bot#5-minute-local-demo-no-discord-or-github-token">Full quickstart <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/cxy2696/GitHub-Community-Bot/tree/main/docs">Documentation <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="code-card">
+        <div class="code-head"><span>terminal</span><button type="button" class="copy-button" data-copy-target="quickstart-code">Copy</button></div>
+        <pre id="quickstart-code"><code><span class="c-muted"># 1. local model</span>
+ollama pull qwen2.5:3b
+
+<span class="c-muted"># 2. install</span>
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
+python -m venv .venv &amp;&amp; source .venv/bin/activate
+pip install -e .
+cp .env.example .env
+
+<span class="c-muted"># 3. try it, no platform tokens</span>
+HTTP_ENABLED=false python -m github_community_bot --cli
+</code></pre>
+      </div>
+    </section>
+
+    <section class="section shell final-cta">
+      <div class="cta-panel">
+        <div>
+          <p class="eyebrow">Free forever, in the ways that matter</p>
+          <h2>Give your community a kinder scoreboard.</h2>
+          <p>Star the repo, self-host it, or open an issue with the one thing your community needs next.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button primary" href="https://github.com/cxy2696/GitHub-Community-Bot">Star on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="https://github.com/cxy2696/GitHub-Community-Bot/blob/main/CONTRIBUTING.md">Contribute</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img src="assets/mark.svg" alt="" width="28" height="28">
+        <span>GitHub Community Bot</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/cxy2696/GitHub-Community-Bot">GitHub</a>
+        <a href="https://github.com/cxy2696/GitHub-Community-Bot/tree/main/docs">Docs</a>
+        <a href="https://github.com/cxy2696/GitHub-Community-Bot/blob/main/LICENSE">MIT License</a>
+        <a href="https://github.com/cxy2696/GitHub-Community-Bot/blob/main/docs/PRIVACY.md">Privacy</a>
+      </div>
+      <p class="footer-note">Built with Ollama, aiohttp and SQLite. This page is a simulation; the bot itself is real.</p>
+    </div>
+  </footer>
+
+  <script src="assets/demo.js" defer></script>
+</body>
+</html>

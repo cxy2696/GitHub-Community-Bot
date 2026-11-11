@@ -2,14 +2,16 @@
 
 [English](../../README.md) · [中文](README.zh.md) · **日本語**
 
+**ライブデモ / ウェブサイト：** <https://cxy2696.github.io/GitHub-Community-Bot/>
+
 GitHub への貢献を、コミュニティの小さな前進として応援する無料・オープンソースの
 セルフホスト Bot です。AI は [Ollama](https://ollama.com) でローカルに動くため、
 有料 API も、チャット内容を第三者へ送ることもありません。
 **Discord、Slack、Telegram、Matrix**、そして署名付き HTTP リクエストを送れる
 あらゆるチャットツールに対応します。
 
-> リポジトリ名は既存リンクのために `GitHub-Discord-Bot` のままですが、
-> 製品は Discord 専用ではありません。
+> リポジトリは `GitHub-Discord-Bot` から `GitHub-Community-Bot` に改名されました。
+> 旧リンクはリダイレクトされます。製品は Discord 専用ではありません。
 
 ---
 
@@ -39,8 +41,8 @@ ollama pull qwen2.5:3b
 ### 2. Bot をインストール
 
 ```bash
-git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
-cd GitHub-Discord-Bot
+git clone https://github.com/cxy2696/GitHub-Community-Bot.git
+cd GitHub-Community-Bot
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
@@ -75,7 +77,7 @@ CLI も正式なアダプターです。Discord などと同じエンジン、SQ
 
 ```bash
 GITHUB_TOKEN=ghp_...
-GITHUB_REPO=cxy2696/GitHub-Discord-Bot
+GITHUB_REPO=cxy2696/GitHub-Community-Bot
 ```
 
 CLI で `!link GitHubユーザー名`、`!leaderboard` を実行します。

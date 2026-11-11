@@ -22,7 +22,7 @@
   "error.github_repo_missing": "対象リポジトリがまだ設定されていません。管理者は `{prefix}set_repo オーナー/リポジトリ` を実行できます。",
   "error.github_api": "GitHub から期待した応答がありませんでした。少ししてから再試行してください。バックグラウンドで自動的に再試行します。",
   "error.not_linked": "先に `{prefix}link <GitHubユーザー名>` で GitHub を連携してください。それからお手伝いできます。",
-  "error.repo_invalid": "`オーナー/リポジトリ` の形式で指定してください。例：`{prefix}set_repo cxy2696/GitHub-Discord-Bot`",
+  "error.repo_invalid": "`オーナー/リポジトリ` の形式で指定してください。例：`{prefix}set_repo cxy2696/GitHub-Community-Bot`",
   "error.repo_not_found": "`{repo}` を開けませんでした。つづりと、Token の読み取り権限を確認してください。",
   "error.private": "データを守るため、この操作は DM でのみ利用できます。",
   "repo.usage": "使い方：`{prefix}set_repo オーナー/リポジトリ`",

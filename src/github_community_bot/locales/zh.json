@@ -22,7 +22,7 @@
   "error.github_repo_missing": "还没有设置仓库。管理员可以运行 `{prefix}set_repo 所有者/仓库`。",
   "error.github_api": "GitHub 这次没有正常回应。请稍后再试，我会在后台继续重试。",
   "error.not_linked": "请先用 `{prefix}link <GitHub用户名>` 绑定 GitHub，我才能帮你完成这个操作。",
-  "error.repo_invalid": "请使用 `所有者/仓库` 格式，例如 `{prefix}set_repo cxy2696/GitHub-Discord-Bot`。",
+  "error.repo_invalid": "请使用 `所有者/仓库` 格式，例如 `{prefix}set_repo cxy2696/GitHub-Community-Bot`。",
   "error.repo_not_found": "我打不开 `{repo}`。请检查拼写，并确认 Token 有读取权限。",
   "error.private": "为了保护你的数据，这个操作只能在私聊里进行。",
   "repo.usage": "用法：`{prefix}set_repo 所有者/仓库`",

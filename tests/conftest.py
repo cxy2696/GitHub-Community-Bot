@@ -51,7 +51,7 @@ class FakeAI:
 
 
 class FakeGitHub:
-    repo_name = "cxy2696/GitHub-Discord-Bot"
+    repo_name = "cxy2696/GitHub-Community-Bot"
     totals = ActivityCounts(commits=3, issues=2, prs=1)
     recent: list = []
 
@@ -85,7 +85,7 @@ def config(tmp_path: Path) -> AppConfig:
         database_path=tmp_path / "community.db",
         data_dir=tmp_path,
         http=HttpConfig(enabled=False),
-        github=GitHubConfig(repo="cxy2696/GitHub-Discord-Bot"),
+        github=GitHubConfig(repo="cxy2696/GitHub-Community-Bot"),
         ollama=OllamaConfig(model="test-model"),
         limits=Limits(rate_limit_per_minute=100, max_context_messages=6),
     )

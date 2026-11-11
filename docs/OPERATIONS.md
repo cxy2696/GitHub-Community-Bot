@@ -183,7 +183,7 @@ Backups may still contain the data until they expire. Document your backup reten
 ```bash
 scripts/backup.sh data/community.db backups
 git fetch --tags
-git checkout v2.0.0        # or the desired tag
+git checkout v2.1.0        # or the desired tag
 source .venv/bin/activate
 pip install -e .
 python -m github_community_bot --check

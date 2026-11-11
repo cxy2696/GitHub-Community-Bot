@@ -11,7 +11,8 @@ preserving a Discord-only one.
 
 1. Keep `DISCORD_BOT_TOKEN` and `GITHUB_TOKEN`.
 2. Remove `GEMINI_API_KEY`; install Ollama and pull a model.
-3. Back up the old folder (`cp -a GitHub-Discord-Bot GitHub-Discord-Bot-v1`).
+3. Back up the old checkout. If it is still named `GitHub-Discord-Bot`, keep it as
+   `GitHub-Discord-Bot-v1`; the repository itself is now `GitHub-Community-Bot`.
 4. Deploy v2 with the same tokens and a new `data/community.db`; remove the old
    `bot.py` and Gemini-era `requirements.txt` from the running deployment (keep a copy
    of `user_data.db` for the optional import).

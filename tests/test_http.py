@@ -100,7 +100,7 @@ async def test_bridge_and_github_webhook(bot, db):
         )
         event_body = json.dumps(
             {
-                "repository": {"full_name": "cxy2696/GitHub-Discord-Bot"},
+                "repository": {"full_name": "cxy2696/GitHub-Community-Bot"},
                 "action": "opened",
                 "issue": {
                     "number": 9,

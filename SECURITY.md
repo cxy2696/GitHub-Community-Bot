@@ -11,7 +11,7 @@
 
 Please **do not open a public issue**. Use GitHub's private vulnerability reporting:
 
-<https://github.com/cxy2696/GitHub-Discord-Bot/security/advisories/new>
+<https://github.com/cxy2696/GitHub-Community-Bot/security/advisories/new>
 
 Include:
 
